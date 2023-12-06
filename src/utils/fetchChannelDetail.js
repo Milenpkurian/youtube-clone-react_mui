@@ -1,8 +1,8 @@
-import { fetchFromAPI } from "./fetchFromApi";
+import { fetchFromApi } from "./fetchFromApi";
 
 export const fetchChannelDetail = async (id) => {
   try {
-    const response = await fetchFromAPI(
+    const response = await fetchFromApi(
       `channels?part=snippet,statistics&id=${id}`
     );
     if (!response) {

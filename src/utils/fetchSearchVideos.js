@@ -1,4 +1,4 @@
-import { fetchFromAPI } from "./fetchFromApi";
+import { fetchFromApi } from "./fetchFromApi";
 
 export const fetchSearchVideos = async (searchTerm, id) => {
   try {
@@ -6,9 +6,9 @@ export const fetchSearchVideos = async (searchTerm, id) => {
 
     let res;
     if (searchTerm) {
-      res = await fetchFromAPI(`${params}&q=${searchTerm}`);
+      res = await fetchFromApi(`${params}&q=${searchTerm}`);
     } else {
-      res = await fetchFromAPI(`${params}&relatedToVideoId=${id}&type=video`);
+      res = await fetchFromApi(`${params}&relatedToVideoId=${id}&type=video`);
     }
 
     if (!res) {

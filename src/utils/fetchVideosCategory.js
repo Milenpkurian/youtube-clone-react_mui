@@ -1,8 +1,8 @@
-import { fetchFromAPI } from "./fetchFromApi";
+import { fetchFromApi } from "./fetchFromApi";
 
 export const fetchVideosCategory = async (selectedCategory) => {
   try {
-    const response = await fetchFromAPI(
+    const response = await fetchFromApi(
       `search?part=snippet&q=${selectedCategory}`
     );
     if (!response) {

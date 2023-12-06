@@ -17,12 +17,12 @@ const options = {
   },
 };
 
-export const fetchFromAPI = async (url) => {
+export const fetchFromApi = async (url) => {
   try {
     const { data } = await axios.get(`${BASE_URL}/${url}`, options);
     return data;
   } catch (error) {
-    console.error("Error in fetchFromAPI:", error);
+    console.error("Error in fetchFromApi:", error);
     throw error;
   }
 };
