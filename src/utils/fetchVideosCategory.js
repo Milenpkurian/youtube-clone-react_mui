@@ -1,4 +1,4 @@
-import { fetchFromAPI } from "./fetchFromApi.js";
+import { fetchFromAPI } from "./fetchFromApi";
 
 export const fetchVideosCategory = async (selectedCategory) => {
   try {
